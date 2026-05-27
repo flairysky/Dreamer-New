@@ -258,6 +258,10 @@ a {
   transition: all 0.2s ease;
 }
 
+.btn-outline--red {
+  border-color: #c1121f;
+}
+
 .btn-cta {
   padding: 12px 26px;
   border-radius: 999px;
