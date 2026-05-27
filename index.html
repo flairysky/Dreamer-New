@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dreamer Education</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <a class="brand" href="index.html">
+          <span>
+            <strong>Dreamer</strong>
+            <em>Education</em>
+          </span>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a class="brand nav-logo" href="index.html">
+          <span>
+            <strong>Dreamer</strong>
+            <em>Education</em>
+          </span>
+        </a>
+        <div class="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <button class="nav-trigger">Services</button>
+              <div class="nav-panel">
+                <a href="students.html">For Students</a>
+                <a href="high-schools.html">For High Schools</a>
+                <a href="faq.html">FAQ</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <button class="nav-trigger">About Us</button>
+              <div class="nav-panel">
+                <a href="about.html#vision">Vision</a>
+                <a href="about.html#team">Team</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <button class="nav-trigger">Resources</button>
+              <div class="nav-panel">
+                <a
+                  href="https://lydian-consonant-2dd.notion.site/Welcome-to-the-Rowen-World-22dd622d17fe80c2b26bebeb1eff3565"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Blog</a
+                >
+                <a href="students-stories.html">Student Stories</a>
+              </div>
+            </li>
+          </ul>
+          <div class="nav-actions">
+            <a class="btn-cta" href="contact.html">Get in touch</a>
+            <div class="lang-select">
+              <span>Language</span>
+              <button class="lang-button" disabled>English</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <video
+          class="hero-video"
+          autoplay
+          muted
+          loop
+          playsinline
+        >
+          <source src="contents/designs/Main Video New.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-overlay">
+          <p class="hero-tag">Where Dreams Come True</p>
+          <h1>Dreamer Education</h1>
+          <div
+            class="typewriter"
+            data-lines="Dream it!|Dare it!|Do it!"
+          ></div>
+          <div class="hero-actions">
+            <a class="btn-hero btn-hero--ghost" href="high-schools.html">For high schools</a>
+            <div class="hero-action hero-action--flagged">
+              <a class="btn-hero btn-hero--solid" href="students.html">For students</a>
+              <span class="hero-badge">Limited free spots</span>
+            </div>
+          </div>
+        </div>
+      </section>
+ 
+      <section class="section flow" id="admission-cycles">
+        <div class="flow-line">
+          <div class="flow-text">
+            <span>Applications In Europe Are Open - Decision Seasons In the UK and US Are Upon Us</span>
+            <span aria-hidden="true">Applications In Europe Are Open - Decision Seasons In the UK and US Are Upon Us</span>
+          </div>
+        </div>
+        <div class="split">
+          <div class="split-text">
+            <h3>
+              EU Admissions Cycle:
+              <span class="cycle-detail">Applications Are Open</span>
+            </h3>
+            <p>
+              Bachelor applications in Central Europe are open, and master's
+              decisions are coming out.
+            </p>
+          </div>
+          <div class="split-media">
+            <video autoplay muted loop playsinline>
+              <source src="contents/designs/Students walk and talk.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+        <div class="split reverse">
+          <div class="split-text">
+            <h3>
+              UK Admissions Cycle:
+              <span class="cycle-detail">Decision Season Is Upon Us</span>
+            </h3>
+            <p class="cycle-subtext cycle-subtext--uk">
+              Offers are arriving, choices are forming, and your next academic
+              chapter is taking shape.
+            </p>
+          </div>
+          <div class="split-media">
+            <video autoplay muted loop playsinline>
+              <source src="contents/designs/Wholeway.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+        <div class="split">
+          <div class="split-text">
+            <h3>
+              US Admissions Cycle:
+              <span class="cycle-detail">Decision Season</span>
+            </h3>
+            <p>
+              Congratulations on your acceptance letters - best of luck with
+              your decisions!
+            </p>
+          </div>
+          <div class="split-media">
+            <video autoplay muted loop playsinline>
+              <source src="contents/designs/Studentswalking Horizontal.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <section class="section testimonials" id="testimonials">
+        <div class="section-header">
+          <h2>What students say</h2>
+        </div>
+        <div class="testimonial-card">
+          <button class="carousel-btn" data-direction="prev">&#10094;</button>
+          <div class="testimonial-content">
+            <p class="testimonial-quote"></p>
+            <p class="testimonial-name"></p>
+          </div>
+          <button class="carousel-btn" data-direction="next">&#10095;</button>
+        </div>
+      </section>
+
+      <section class="section supported-by">
+        <h2>Supported by</h2>
+        <a href="https://sph.ethz.ch/" target="_blank" rel="noreferrer">
+          <img
+            src="contents/ETH_SPH_Logo.svg"
+            alt="ETH Student Project House"
+          />
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="footer-grid">
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li>
+              <i class="fa-solid fa-location-dot footer-icon" aria-hidden="true"></i>
+              Zurich, Switzerland
+            </li>
+            <li>
+              <i class="fa-regular fa-clock footer-icon" aria-hidden="true"></i>
+              Mon - Fri, 10:00 - 18:00
+            </li>
+            <li>
+              <i class="fa-regular fa-envelope footer-icon" aria-hidden="true"></i>
+              info@dreamereducation.com
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-title">Social media</h3>
+          <div class="socials">
+            <a href="#" aria-label="Instagram">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="#" aria-label="X">
+              <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+            <a href="#" aria-label="GitHub">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+          </div>
+          <p class="disclaimer">
+            Disclaimer: Dreamer Education is an independent organization. It is
+            not officially connected to any university, college, or educational
+            institution referenced on this website.
+          </p>
+        </div>
+        <div>
+          <h3>Subscribe to newsletter</h3>
+          <form
+            class="newsletter"
+            action="https://formspree.io/f/xovlvkap"
+            method="POST"
+          >
+            <input
+              type="email"
+              name="email"
+              placeholder="Your email"
+              required
+            />
+            <label class="checkbox">
+              <input type="checkbox" name="consent" required />
+              <span>
+                I read and understood the
+                <a href="privacy.html">privacy policy</a> and
+                <a href="terms.html">terms of use</a>.
+              </span>
+            </label>
+            <button type="submit" class="btn-solid">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Dreamer Education</p>
+        <p>Inspired by ♡ for learning and knowledge.</p>
+        <p>
+          <a href="terms.html">Terms of Use</a> and
+          <a href="privacy.html">Privacy Policy</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

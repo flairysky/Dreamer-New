@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academic Institutions | Dreamer Education</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <a class="brand" href="index.html">
+          <span>
+            <strong>Dreamer</strong>
+            <em>Education</em>
+          </span>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a class="brand nav-logo" href="index.html">
+          <span>
+            <strong>Dreamer</strong>
+            <em>Education</em>
+          </span>
+        </a>
+        <div class="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <button class="nav-trigger">Services</button>
+              <div class="nav-panel">
+                <a href="students.html">For Students</a>
+                <a href="high-schools.html">For High Schools</a>
+                <a href="faq.html">FAQ</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <button class="nav-trigger">About Us</button>
+              <div class="nav-panel">
+                <a href="about.html#vision">Vision</a>
+                <a href="about.html#team">Team</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <button class="nav-trigger">Resources</button>
+              <div class="nav-panel">
+                <a
+                  href="https://lydian-consonant-2dd.notion.site/Welcome-to-the-Rowen-World-22dd622d17fe80c2b26bebeb1eff3565"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Blog</a
+                >
+                <a href="students-stories.html">Student Stories</a>
+              </div>
+            </li>
+          </ul>
+          <div class="nav-actions">
+            <a class="btn-cta" href="contact.html">Get in touch</a>
+            <div class="lang-select">
+              <span>Language</span>
+              <button class="lang-button" disabled>English</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div>
+          <h1>Let's Talk</h1>
+          <p>
+            Arrange a non-binding discussion with one of our team members about
+            possible opportunities for students of your academic institution.
+          </p>
+        </div>
+      </section>
+
+      <section class="section contact-shell">
+        <div class="contact-card">
+          <h2>Contact form for academic institutions</h2>
+          <p>
+            Share your institution details and we will follow up with a
+            partnership conversation.
+          </p>
+
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/movlvkkw"
+            method="POST"
+          >
+            <div class="form-field">
+              <label class="form-label" for="institution-name">
+                What is your full name?<span class="required">*</span>
+              </label>
+              <input
+                class="form-input"
+                id="institution-name"
+                type="text"
+                name="full_name"
+                placeholder="Your full name"
+                required
+              />
+            </div>
+
+            <div class="form-field">
+              <label class="form-label">
+                What kind of academic institution do you represent?
+                <span class="required">*</span>
+              </label>
+              <div class="form-options">
+                <label class="option-item">
+                  <input type="radio" name="institution_type" value="high_school" required />
+                  High School
+                </label>
+                <label class="option-item">
+                  <input type="radio" name="institution_type" value="university" required />
+                  University
+                </label>
+                <label class="option-item">
+                  <input type="radio" name="institution_type" value="other" required />
+                  Other
+                </label>
+              </div>
+            </div>
+
+            <div class="form-grid">
+              <div class="form-field">
+                <label class="form-label" for="institution-school">
+                  What is the name of your academic institution?
+                  <span class="required">*</span>
+                </label>
+                <input
+                  class="form-input"
+                  id="institution-school"
+                  type="text"
+                  name="institution_name"
+                  placeholder="Institution name"
+                  required
+                />
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="institution-website">
+                  Insert the webpage of your academic institution
+                </label>
+                <input
+                  class="form-input"
+                  id="institution-website"
+                  type="url"
+                  name="institution_website"
+                  placeholder="e.g. https://www.university.edu"
+                />
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="institution-email">
+                What is your email address?<span class="required">*</span>
+              </label>
+              <input
+                class="form-input"
+                id="institution-email"
+                type="email"
+                name="email"
+                placeholder="Enter your email address"
+                required
+              />
+            </div>
+
+            <div class="form-field">
+              <label class="option-item">
+                <input type="checkbox" name="consent" required />
+                <span>
+                  I agree with the <a href="privacy.html">Privacy Policy</a> and
+                  <a href="terms.html">Terms of Use</a>.
+                </span>
+              </label>
+              <label class="option-item">
+                <input type="checkbox" name="human_check" required />
+                <span>I am not a robot.</span>
+              </label>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn-solid" type="submit">Send</button>
+              <span class="form-note">We reply within 2 business days.</span>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li>
+              <i class="fa-solid fa-location-dot footer-icon" aria-hidden="true"></i>
+              Zurich, Switzerland
+            </li>
+            <li>
+              <i class="fa-regular fa-clock footer-icon" aria-hidden="true"></i>
+              Mon - Fri, 10:00 - 18:00
+            </li>
+            <li>
+              <i class="fa-regular fa-envelope footer-icon" aria-hidden="true"></i>
+              info@dreamereducation.com
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-title">Social media</h3>
+          <div class="socials">
+            <a href="#" aria-label="Instagram">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="#" aria-label="X">
+              <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+            <a href="#" aria-label="GitHub">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+          </div>
+          <p class="disclaimer">
+            Disclaimer: Dreamer Education is an independent organization. It is
+            not officially connected to any university, college, or educational
+            institution referenced on this website.
+          </p>
+        </div>
+        <div>
+          <h3>Subscribe to newsletter</h3>
+          <form
+            class="newsletter"
+            action="https://formspree.io/f/xovlvkap"
+            method="POST"
+          >
+            <input
+              type="email"
+              name="email"
+              placeholder="Your email"
+              required
+            />
+            <label class="checkbox">
+              <input type="checkbox" name="consent" required />
+              <span>
+                I read and understood the
+                <a href="privacy.html">privacy policy</a> and
+                <a href="terms.html">terms of use</a>.
+              </span>
+            </label>
+            <button type="submit" class="btn-solid">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Dreamer Education</p>
+        <p>Inspired by ♡ for learning and knowledge.</p>
+        <p>
+          <a href="terms.html">Terms of Use</a> and
+          <a href="privacy.html">Privacy Policy</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
