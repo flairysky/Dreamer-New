@@ -197,7 +197,7 @@ a {
 
 .policy a.policy-link {
   color: inherit;
-  text-decoration: none;
+  text-decoration: underline;
   transition: color 0.2s ease;
 }
 
