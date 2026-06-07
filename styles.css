@@ -95,6 +95,12 @@ a {
   object-fit: contain;
 }
 
+.brand img.brand-logo {
+  width: auto;
+  height: 40px;
+  object-fit: contain;
+}
+
 .brand span strong {
   font-size: 20px;
   display: block;
@@ -1172,6 +1178,10 @@ a {
   .navbar {
     align-items: center;
     text-align: center;
+  }
+
+  .brand img.brand-logo {
+    height: 22px;
   }
 
   .nav-toggle {
