@@ -557,12 +557,12 @@ a {
   margin-bottom: 20px;
 }
 
-.split.reverse {
-  direction: rtl;
+.split.reverse .split-text {
+  order: 2;
 }
 
-.split.reverse > * {
-  direction: ltr;
+.split.reverse .split-media {
+  order: 1;
 }
 
 .split-text h3 {
@@ -581,7 +581,7 @@ a {
 }
 
 .section.flow .split.reverse .split-text {
-  transform: translateX(36px);
+  transform: translateX(0);
 }
 
 .section.flow .split-text p {
