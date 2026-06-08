@@ -1335,6 +1335,11 @@ a {
     grid-template-columns: 1fr;
   }
 
+  .split.reverse .split-text,
+  .split.reverse .split-media {
+    order: unset;
+  }
+
   .hero-actions {
     flex-direction: column;
   }
