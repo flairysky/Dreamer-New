@@ -30,6 +30,9 @@ navItems.forEach((item) => {
   }
 
   trigger.addEventListener("click", (event) => {
+    if (trigger instanceof HTMLAnchorElement) {
+      return;
+    }
     event.preventDefault();
     const isOpen = item.classList.toggle("is-open");
     navItems.forEach((other) => {
