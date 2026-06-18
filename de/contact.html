@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Students | Dreamer Education</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Kontakt | Dreamer Education</title>
+    <link rel="stylesheet" href="../styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,35 +16,35 @@
     <header class="site-header">
       <nav class="navbar">
         <a class="brand" href="index.html">
-          <img src="contents/Logos/Dreamer%20Education%20Logo%20transparent.png" alt="Dreamer Education" class="brand-logo" />
+          <img src="../contents/Logos/Dreamer%20Education%20Logo%20transparent.png" alt="Dreamer Education" class="brand-logo" />
         </a>
-        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false">
           <span></span>
           <span></span>
           <span></span>
         </button>
         <a class="brand nav-logo" href="index.html">
-          <img src="contents/Logos/Dreamer%20Logo%20Transparent.png" alt="Dreamer Education" class="brand-logo" />
+          <img src="../contents/Logos/Dreamer%20Logo%20Transparent.png" alt="Dreamer Education" class="brand-logo" />
         </a>
         <div class="nav-menu">
           <ul class="nav-list">
             <li class="nav-item">
-              <button class="nav-trigger">Services</button>
+              <button class="nav-trigger">Angebote</button>
               <div class="nav-panel">
-                <a href="students.html">For Students</a>
-                <a href="high-schools.html">For High Schools</a>
+                <a href="students.html">Für Schüler</a>
+                <a href="high-schools.html">Für Gymnasien</a>
                 <a href="faq.html">FAQ</a>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-trigger" href="about.html">About Us</a>
+              <a class="nav-trigger" href="about.html">Über uns</a>
               <div class="nav-panel">
                 <a href="about.html#vision">Vision</a>
                 <a href="about.html#team">Team</a>
               </div>
             </li>
             <li class="nav-item">
-              <button class="nav-trigger">Resources</button>
+              <button class="nav-trigger">Ressourcen</button>
               <div class="nav-panel">
                 <a
                   href="https://lydian-consonant-2dd.notion.site/Welcome-to-the-Rowen-World-22dd622d17fe80c2b26bebeb1eff3565"
@@ -52,17 +52,17 @@
                   rel="noreferrer"
                   >Blog</a
                 >
-                <a href="students-stories.html">Student Stories</a>
+                <a href="students-stories.html">Schülergeschichten</a>
               </div>
             </li>
           </ul>
           <div class="nav-actions">
-            <a class="btn-cta" href="contact.html">Let's talk!</a>
+            <a class="btn-cta" href="contact.html">Kontakt</a>
             <div class="lang-select">
-              <span>Language</span>
+              <span>Sprache</span>
               <div class="lang-buttons">
-                <a class="lang-button lang-button--active" href="#">EN</a>
-                <a class="lang-button" href="de/contact-students.html">DE</a>
+                <a class="lang-button" href="../contact.html">EN</a>
+                <a class="lang-button lang-button--active" href="#">DE</a>
               </div>
             </div>
           </div>
@@ -73,69 +73,67 @@
     <main>
       <section class="page-hero">
         <div>
-          <h1>Let's Talk !</h1>
+          <h1>Sprechen wir</h1>
           <p>
-            Apply for a free mentorship program where we discuss your goals, challenges, and
-            possible opportunities for your academic journey.
+            Vereinbaren Sie ein unverbindliches Gespräch mit einem unserer Teammitglieder über mögliche Perspektiven für Ihren akademischen Weg.
           </p>
         </div>
       </section>
 
       <section class="section contact-shell">
         <div class="contact-card">
-          <h2>Application Form</h2>
+          <h2>Unverbindliches Gespräch vereinbaren.</h2>
           <p>
-            Tell us where you are on your academic journey and the topics you
-            would like to explore. We will reach out with the next steps.
+            Teilen Sie uns mit, wo Sie auf Ihrem akademischen Weg stehen und welche Themen Sie erkunden möchten. Wir melden uns mit den nächsten Schritten.
           </p>
 
           <form
             class="contact-form"
-            action="https://formspree.io/f/xgvzvnnz"
+            action="https://formspree.io/f/mjglpjjg"
             method="POST"
             data-require-topics
           >
             <div class="form-field">
               <label class="form-label">
-                Please indicate if you are a student or a guardian.
+                Bitte geben Sie an, ob Sie Schüler/Student oder Erziehungsberechtigter sind.
                 <span class="required">*</span>
               </label>
               <div class="form-options">
                 <label class="option-item">
                   <input type="radio" name="role" value="student" required />
-                  Student
+                  Schüler/Student
                 </label>
                 <label class="option-item">
                   <input type="radio" name="role" value="guardian" required />
-                  Guardian
+                  Erziehungsberechtigter
                 </label>
               </div>
             </div>
 
             <div class="form-grid">
               <div class="form-field">
-                <label class="form-label" for="student-first-name">
-                  What is your first name?<span class="required">*</span>
+                <label class="form-label" for="general-first-name">
+                  Wie lautet Ihr Vorname?<span class="required">*</span>
                 </label>
                 <input
                   class="form-input"
-                  id="student-first-name"
+                  id="general-first-name"
                   type="text"
                   name="first_name"
-                  placeholder="Your first name"
+                  placeholder="Ihr Vorname"
                   required
                 />
               </div>
               <div class="form-field">
-                <label class="form-label" for="student-email">
-                  What is your email address?<span class="required">*</span>
+                <label class="form-label" for="general-email">
+                  Wie lautet Ihre E-Mail-Adresse?<span class="required">*</span>
                 </label>
                 <input
                   class="form-input"
-                  id="student-email"
+                  id="general-email"
                   type="email"
                   name="email"
-                  placeholder="Your email"
+                  placeholder="Ihre E-Mail"
                   required
                 />
               </div>
@@ -143,7 +141,7 @@
 
             <div class="form-field">
               <label class="form-label">
-                At what stage of your studies are you?
+                In welcher Studienphase befinden Sie sich?
                 <span class="required">*</span>
               </label>
               <div class="form-options">
@@ -154,7 +152,7 @@
                     value="highschool_1_2"
                     required
                   />
-                  Highschooler (1.-2.year)
+                  Gymnasiast (1.–2. Jahr)
                 </label>
                 <label class="option-item">
                   <input
@@ -163,7 +161,7 @@
                     value="highschool_3_4"
                     required
                   />
-                  Highschooler (3.-4.year)
+                  Gymnasiast (3.–4. Jahr)
                 </label>
                 <label class="option-item">
                   <input
@@ -172,119 +170,105 @@
                     value="bachelor"
                     required
                   />
-                  Bachelor student
+                  Bachelor-Student
                 </label>
                 <label class="option-item">
                   <input type="radio" name="study_stage" value="master" required />
-                  Master student
+                  Master-Student
                 </label>
               </div>
             </div>
 
             <div class="form-grid">
               <div class="form-field">
-                <label class="form-label" for="student-location">
-                  Location of your studies.
+                <label class="form-label" for="general-location">
+                  Wo studieren Sie?
                   <span class="required">*</span>
                 </label>
                 <input
                   class="form-input"
-                  id="student-location"
+                  id="general-location"
                   type="text"
                   name="study_location"
-                  placeholder="Your location or school"
+                  placeholder="Ihr Standort oder Ihre Schule"
                   required
                 />
               </div>
               <div class="form-field">
-                <label class="form-label" for="student-school">
-                  Name of current school/university (optional)
+                <label class="form-label" for="general-school">
+                  Name der aktuellen Schule/Universität (optional)
                 </label>
                 <input
                   class="form-input"
-                  id="student-school"
+                  id="general-school"
                   type="text"
                   name="current_school"
-                  placeholder="School or University (optional)"
+                  placeholder="Schule oder Universität (optional)"
                 />
               </div>
             </div>
 
             <div class="form-field">
-              <label class="form-label" for="student-gpa">
-                Current GPA <span class="required">*</span>
-              </label>
-              <input
-                class="form-input"
-                id="student-gpa"
-                type="text"
-                name="current_gpa"
-                placeholder="e.g., 3.7 / 6.0 or 92/100"
-                required
-              />
-            </div>
-
-            <div class="form-field">
               <label class="form-label">
-                What topic would you like to discuss?
+                Welches Thema möchten Sie besprechen?
                 <span class="required">*</span>
               </label>
               <div class="form-options">
                 <label class="option-item">
                   <input type="checkbox" name="topics" value="learning" />
-                  Learning strategies mentoring
+                  Lernstrategien-Coaching
                 </label>
                 <label class="option-item">
                   <input type="checkbox" name="topics" value="guidance" />
-                  General academic guidance
+                  Allgemeine akademische Beratung
                 </label>
                 <label class="option-item">
                   <input type="checkbox" name="topics" value="extracurriculars" />
-                  Extracurriculars
+                  Außerschulische Aktivitäten
                 </label>
                 <label class="option-item">
                   <input type="checkbox" name="topics" value="application_bachelor" />
-                  Application for bachelor's degree
+                  Bewerbung für ein Bachelorstudium
                 </label>
                 <label class="option-item">
                   <input type="checkbox" name="topics" value="application_master" />
-                  Application for master's degree
+                  Bewerbung für ein Masterstudium
                 </label>
                 <label class="option-item">
                   <input type="checkbox" name="topics" value="other" />
-                  Other
+                  Sonstiges
                 </label>
               </div>
               <input
                 class="form-input"
                 type="text"
                 name="topics_other"
-                placeholder="Please specify"
+                placeholder="Bitte spezifizieren"
               />
             </div>
 
             <div class="form-field">
-              <label class="form-label" for="student-promo">
-                Promo code (optional)
+              <label class="form-label" for="general-promo">
+                Aktionscode (optional)
               </label>
               <input
                 class="form-input"
-                id="student-promo"
+                id="general-promo"
                 type="text"
                 name="promo_code"
-                placeholder="Promo code (optional)"
+                placeholder="Aktionscode (optional)"
               />
             </div>
 
             <div class="form-field">
-              <label class="form-label" for="student-message">
-                Additional context (optional)
+              <label class="form-label" for="general-message">
+                Zusätzlicher Kontext (optional)
               </label>
               <textarea
                 class="form-textarea"
-                id="student-message"
+                id="general-message"
                 name="message"
-                placeholder="Share anything that helps us prepare"
+                placeholder="Teilen Sie alles mit, was uns bei der Vorbereitung hilft"
               ></textarea>
             </div>
 
@@ -292,25 +276,25 @@
               <label class="option-item">
                 <input type="checkbox" name="consent" required />
                 <span>
-                  I agree with the <a href="privacy.html">Privacy Policy</a> and
-                  <a href="terms.html">Terms of Use</a>.
+                  Ich stimme der <a href="privacy.html">Datenschutzrichtlinie</a> und den
+                  <a href="terms.html">Nutzungsbedingungen</a> zu.
                 </span>
               </label>
               <label class="option-item">
                 <input type="checkbox" name="guardian_acknowledgement" />
                 <span>
-                  If the student is under 18 years old, the student confirms that a parent or legal guardian is aware of this submission and will either be present at the first discussion or provide consent for such a discussion.
+                  Falls der Schüler unter 18 Jahre alt ist, bestätigt er/sie, dass ein Elternteil oder Erziehungsberechtigter von dieser Einreichung weiß und beim ersten Gespräch anwesend sein oder seine Zustimmung dazu erteilen wird.
                 </span>
               </label>
               <label class="option-item">
                 <input type="checkbox" name="human_check" required />
-                <span>I am not a robot.</span>
+                <span>Ich bin kein Roboter.</span>
               </label>
             </div>
 
             <div class="form-actions">
-              <button class="btn-solid" type="submit">Send</button>
-              <span class="form-note">We reply within 2 business days.</span>
+              <button class="btn-solid" type="submit">Senden</button>
+              <span class="form-note">Wir antworten innerhalb von 2 Werktagen.</span>
             </div>
           </form>
         </div>
@@ -320,20 +304,20 @@
     <footer class="site-footer">
       <div class="footer-grid">
         <div>
-          <h3>Contact</h3>
+          <h3>Kontakt</h3>
           <ul>
             <li>
               <i class="fa-solid fa-location-dot footer-icon" aria-hidden="true"></i>
-              Zurich, Switzerland
+              Zürich, Schweiz
             </li>
             <li>
               <i class="fa-regular fa-clock footer-icon" aria-hidden="true"></i>
-              Mon - Fri, 10:00 - 18:00
+              Mo – Fr, 10:00 – 18:00
             </li>
           </ul>
         </div>
         <div>
-          <h3 class="footer-title">Social media</h3>
+          <h3 class="footer-title">Soziale Medien</h3>
           <div class="socials">
             <a href="#" aria-label="Instagram">
               <i class="fa-brands fa-instagram" aria-hidden="true"></i>
@@ -349,13 +333,11 @@
             </a>
           </div>
           <p class="disclaimer">
-            Disclaimer: Dreamer Education is an independent organization. It is
-            not officially connected to any university, college, or educational
-            institution referenced on this website.
+            Haftungsausschluss: Dreamer Education ist eine unabhängige Organisation. Sie ist nicht offiziell mit einer Universität, Hochschule oder einer anderen auf dieser Website genannten Bildungseinrichtung verbunden.
           </p>
         </div>
         <div>
-          <h3>Subscribe to newsletter</h3>
+          <h3>Newsletter abonnieren</h3>
           <form
             class="newsletter"
             action="https://formspree.io/f/xovlvkap"
@@ -364,27 +346,27 @@
             <input
               type="email"
               name="email"
-              placeholder="Your email"
+              placeholder="Ihre E-Mail"
               required
             />
             <label class="checkbox">
               <input type="checkbox" name="consent" required />
               <span>
-                I read and understood the
-                <a href="privacy.html">privacy policy</a> and
-                <a href="terms.html">terms of use</a>.
+                Ich habe die
+                <a href="privacy.html">Datenschutzrichtlinie</a> und die
+                <a href="terms.html">Nutzungsbedingungen</a> gelesen und verstanden.
               </span>
             </label>
-            <button type="submit" class="btn-solid">Subscribe</button>
+            <button type="submit" class="btn-solid">Abonnieren</button>
           </form>
         </div>
       </div>
       <div class="footer-bottom">
         <p>© 2026 Dreamer Education</p>
-        <p>Inspired by ♡ for learning and knowledge.</p>
+        <p>Inspiriert von ♡ für Lernen und Wissen.</p>
         <p>
-          <a href="terms.html">Terms of Use</a> and
-          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Nutzungsbedingungen</a> und
+          <a href="privacy.html">Datenschutzrichtlinie</a>
         </p>
       </div>
     </footer>

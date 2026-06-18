@@ -339,6 +339,11 @@ a {
   color: rgba(12, 28, 52, 0.6);
 }
 
+.lang-buttons {
+  display: flex;
+  gap: 6px;
+}
+
 .lang-button {
   border-radius: 12px;
   border: 1px solid rgba(11, 35, 67, 0.2);
@@ -346,7 +351,16 @@ a {
   padding: 6px 14px;
   font-weight: 600;
   color: var(--navy);
-  cursor: not-allowed;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.lang-button--active {
+  background: var(--navy);
+  color: #ffffff;
+  border-color: var(--navy);
+  cursor: default;
 }
 
 .hero {
