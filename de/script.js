@@ -193,3 +193,134 @@ buttons.forEach((button) => {
     startRotation();
   });
 });
+
+(function () {
+  var CONSENT_KEY = 'dreamer_cookie_consent';
+
+  function loadClarity() {
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window,document,"clarity","script","xa1zmxdgr2");
+  }
+
+  function showBanner() {
+    var banner = document.createElement('div');
+    banner.className = 'cookie-banner';
+    banner.id = 'cookie-banner';
+    banner.innerHTML =
+      '<div class="cookie-banner-inner">' +
+        '<p>Wir verwenden <strong>Microsoft Clarity</strong>, um zu verstehen, wie diese Website genutzt wird, und um deren Inhalt zu verbessern. Durch Ihre Zustimmung erklären Sie sich damit einverstanden, dass wir und Microsoft diese Daten erheben und verwenden dürfen. <a href="privacy.html">Datenschutzrichtlinie</a></p>' +
+        '<div class="cookie-banner-actions">' +
+          '<button class="cookie-btn cookie-btn--accept" id="cookie-accept">Akzeptieren</button>' +
+          '<button class="cookie-btn cookie-btn--decline" id="cookie-decline">Ablehnen</button>' +
+        '</div>' +
+      '</div>';
+    document.body.appendChild(banner);
+
+    document.getElementById('cookie-accept').addEventListener('click', function () {
+      localStorage.setItem(CONSENT_KEY, 'accepted');
+      banner.remove();
+      loadClarity();
+    });
+
+    document.getElementById('cookie-decline').addEventListener('click', function () {
+      localStorage.setItem(CONSENT_KEY, 'declined');
+      banner.remove();
+    });
+  }
+
+  var consent = localStorage.getItem(CONSENT_KEY);
+  if (consent === 'accepted') {
+    loadClarity();
+  } else if (consent !== 'declined') {
+    showBanner();
+  }
+}());
+
+(function () {
+  var openBtn = document.getElementById('careers-open');
+  if (!openBtn) { return; }
+
+  var overlay = document.createElement('div');
+  overlay.className = 'modal-overlay';
+  overlay.id = 'careers-modal';
+  overlay.setAttribute('role', 'dialog');
+  overlay.setAttribute('aria-modal', 'true');
+  overlay.innerHTML =
+    '<div class="modal-card">' +
+      '<button class="modal-close" id="careers-modal-close" aria-label="Schließen">&times;</button>' +
+      '<h3>Bewerbungsformular</h3>' +
+      '<form class="contact-form" action="https://formspree.io/f/xykqggwp" method="POST" enctype="multipart/form-data">' +
+        '<div class="form-field">' +
+          '<label class="form-label" for="c-first-name">Wie lautet Ihr Vorname?<span class="required">*</span></label>' +
+          '<input class="form-input" id="c-first-name" type="text" name="first_name" placeholder="Ihr Vorname" required />' +
+        '</div>' +
+        '<div class="form-field">' +
+          '<label class="form-label">Wie haben Sie von uns erfahren?<span class="required">*</span></label>' +
+          '<div class="form-options">' +
+            '<label class="option-item"><input type="radio" name="heard_about_us" value="friend_colleague" required /> Freund oder Kollege</label>' +
+            '<label class="option-item"><input type="radio" name="heard_about_us" value="social_media" required /> Soziale Medien</label>' +
+            '<label class="option-item"><input type="radio" name="heard_about_us" value="search_engine" required /> Suchmaschine</label>' +
+            '<label class="option-item"><input type="radio" name="heard_about_us" value="school_university" required /> Schule oder Universität</label>' +
+            '<label class="option-item"><input type="radio" name="heard_about_us" value="other" required /> Sonstiges</label>' +
+          '</div>' +
+        '</div>' +
+        '<div class="form-field">' +
+          '<label class="form-label" for="c-email">Wie lautet Ihre E-Mail-Adresse?<span class="required">*</span></label>' +
+          '<input class="form-input" id="c-email" type="email" name="email" placeholder="Ihre E-Mail-Adresse" required />' +
+        '</div>' +
+        '<div class="form-field">' +
+          '<label class="form-label" for="c-linkedin">LinkedIn-Profil URL (optional)</label>' +
+          '<input class="form-input" id="c-linkedin" type="url" name="linkedin" placeholder="https://linkedin.com/in/ihrprofil" />' +
+        '</div>' +
+        '<div class="form-field">' +
+          '<label class="form-label" for="c-motivation">Warum möchten Sie uns beitreten und was glauben Sie, können Sie dem Team bringen?<span class="required">*</span></label>' +
+          '<textarea class="form-textarea" id="c-motivation" name="motivation" placeholder="Erzählen Sie uns, warum Sie Dreamer Education beitreten möchten und welche Fähigkeiten oder Qualitäten Sie einbringen würden ..." required></textarea>' +
+        '</div>' +
+        '<div class="form-field">' +
+          '<label class="option-item"><input type="checkbox" name="consent" required /><span> Ich stimme der <a href="privacy.html">Datenschutzrichtlinie</a> und den <a href="terms.html">Nutzungsbedingungen</a> zu.</span></label>' +
+          '<label class="option-item"><input type="checkbox" name="human_check" required /><span> Ich bin kein Roboter.</span></label>' +
+        '</div>' +
+        '<div class="form-actions">' +
+          '<button class="btn-solid" type="submit">Bewerbung senden</button>' +
+          '<span class="form-note">Wir antworten innerhalb von 2 Werktagen.</span>' +
+        '</div>' +
+      '</form>' +
+    '</div>';
+  document.body.appendChild(overlay);
+
+  var otherWrap = document.createElement('div');
+  otherWrap.style.cssText = 'display:none;margin-top:8px;';
+  otherWrap.innerHTML = '<input class="form-input" type="text" name="heard_about_us_other" placeholder="Bitte geben Sie an, wie Sie von uns erfahren haben ..." />';
+  var otherRadio = overlay.querySelector('input[value="other"]');
+  if (otherRadio) { otherRadio.closest('.form-field').appendChild(otherWrap); }
+
+  overlay.querySelectorAll('input[name="heard_about_us"]').forEach(function (r) {
+    r.addEventListener('change', function () {
+      otherWrap.style.display = r.value === 'other' ? 'block' : 'none';
+    });
+  });
+
+  function openModal() {
+    overlay.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+    overlay.querySelector('.modal-close').focus();
+  }
+
+  function closeModal() {
+    overlay.classList.remove('is-open');
+    document.body.style.overflow = '';
+    openBtn.focus();
+  }
+
+  openBtn.addEventListener('click', openModal);
+  document.getElementById('careers-modal-close').addEventListener('click', closeModal);
+  overlay.addEventListener('click', function (e) {
+    if (e.target === overlay) { closeModal(); }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && overlay.classList.contains('is-open')) { closeModal(); }
+  });
+}());
