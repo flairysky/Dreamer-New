@@ -1,4 +1,4 @@
-const typewriter = document.querySelector(".typewriter");
+﻿const typewriter = document.querySelector(".typewriter");
 const navToggle = document.querySelector(".nav-toggle");
 const navbar = document.querySelector(".navbar");
 const navItems = document.querySelectorAll(".nav-item");
@@ -146,12 +146,12 @@ if (admissionTextBlocks.length > 0) {
 const testimonials = [
   {
     quote:
-      "The support from Dreamer Education in choosing a university and later during my application preparations significantly improved the overall quality and helped me get accepted to the university of my dreams. Above all, the support from people who had been successful in applying to top universities gave me the much-needed peace of mind during the entire application process.",
+      "The support from Dynasty Education in choosing a university and later during my application preparations significantly improved the overall quality and helped me get accepted to the university of my dreams. Above all, the support from people who had been successful in applying to top universities gave me the much-needed peace of mind during the entire application process.",
     name: "Martin",
   },
   {
     quote:
-      "I really appreciate the patience and professionalism of the Dreamer Education team. They helped me with everything from choosing a school to writing my motivation letter.",
+      "I really appreciate the patience and professionalism of the Dynasty Education team. They helped me with everything from choosing a school to writing my motivation letter.",
     name: "Nasta",
   },
 ];
@@ -195,7 +195,7 @@ buttons.forEach((button) => {
 });
 
 (function () {
-  var CONSENT_KEY = 'dreamer_cookie_consent';
+  var CONSENT_KEY = 'dynasty_cookie_consent';
 
   function loadClarity() {
     (function(c,l,a,r,i,t,y){
@@ -277,7 +277,7 @@ buttons.forEach((button) => {
         '</div>' +
         '<div class="form-field">' +
           '<label class="form-label" for="c-motivation">Why do you want to join us, and what do you believe you can bring to the team?<span class="required">*</span></label>' +
-          '<textarea class="form-textarea" id="c-motivation" name="motivation" placeholder="Tell us why you want to join Dreamer Education and what skills or qualities you would bring to the team..." required></textarea>' +
+          '<textarea class="form-textarea" id="c-motivation" name="motivation" placeholder="Tell us why you want to join Dynasty Education and what skills or qualities you would bring to the team..." required></textarea>' +
         '</div>' +
         '<div class="form-field">' +
           '<label class="option-item"><input type="checkbox" name="consent" required /><span> I agree with the <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Use</a>.</span></label>' +

@@ -1,4 +1,4 @@
-const typewriter = document.querySelector(".typewriter");
+﻿const typewriter = document.querySelector(".typewriter");
 const navToggle = document.querySelector(".nav-toggle");
 const navbar = document.querySelector(".navbar");
 const navItems = document.querySelectorAll(".nav-item");
@@ -146,12 +146,12 @@ if (admissionTextBlocks.length > 0) {
 const testimonials = [
   {
     quote:
-      "Die Unterstützung von Dreamer Education bei der Wahl einer Universität und später bei der Vorbereitung meiner Bewerbung hat die Gesamtqualität meiner Unterlagen erheblich verbessert und mir geholfen, an der Universität meiner Träume angenommen zu werden. Vor allem die Begleitung durch Menschen, die selbst erfolgreich an Spitzenuniversitäten studiert haben, gab mir die so nötige innere Ruhe während des gesamten Bewerbungsprozesses.",
+      "Die Unterstützung von Dynasty Education bei der Wahl einer Universität und später bei der Vorbereitung meiner Bewerbung hat die Gesamtqualität meiner Unterlagen erheblich verbessert und mir geholfen, an der Universität meiner Träume angenommen zu werden. Vor allem die Begleitung durch Menschen, die selbst erfolgreich an Spitzenuniversitäten studiert haben, gab mir die so nötige innere Ruhe während des gesamten Bewerbungsprozesses.",
     name: "Martin",
   },
   {
     quote:
-      "Ich schätze die Geduld und Professionalität des Dreamer Education-Teams sehr. Sie haben mir bei allem geholfen – von der Wahl der Schule bis hin zum Verfassen meines Motivationsschreibens.",
+      "Ich schätze die Geduld und Professionalität des Dynasty Education-Teams sehr. Sie haben mir bei allem geholfen – von der Wahl der Schule bis hin zum Verfassen meines Motivationsschreibens.",
     name: "Nasta",
   },
 ];
@@ -195,7 +195,7 @@ buttons.forEach((button) => {
 });
 
 (function () {
-  var CONSENT_KEY = 'dreamer_cookie_consent';
+  var CONSENT_KEY = 'dynasty_cookie_consent';
 
   function loadClarity() {
     (function(c,l,a,r,i,t,y){
@@ -277,7 +277,7 @@ buttons.forEach((button) => {
         '</div>' +
         '<div class="form-field">' +
           '<label class="form-label" for="c-motivation">Warum möchten Sie uns beitreten und was glauben Sie, können Sie dem Team bringen?<span class="required">*</span></label>' +
-          '<textarea class="form-textarea" id="c-motivation" name="motivation" placeholder="Erzählen Sie uns, warum Sie Dreamer Education beitreten möchten und welche Fähigkeiten oder Qualitäten Sie einbringen würden ..." required></textarea>' +
+          '<textarea class="form-textarea" id="c-motivation" name="motivation" placeholder="Erzählen Sie uns, warum Sie Dynasty Education beitreten möchten und welche Fähigkeiten oder Qualitäten Sie einbringen würden ..." required></textarea>' +
         '</div>' +
         '<div class="form-field">' +
           '<label class="option-item"><input type="checkbox" name="consent" required /><span> Ich stimme der <a href="privacy.html">Datenschutzrichtlinie</a> und den <a href="terms.html">Nutzungsbedingungen</a> zu.</span></label>' +
