@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" \"https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap\" -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/120 Safari/537.36\")",
+      "Bash(curl -s \"https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap\" -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/120 Safari/537.36\" -o /tmp_fonts.css)",
+      "Bash(cat /tmp_fonts.css)",
+      "Bash(mkdir -p /c/Users/dnadr/AppData/Local/Temp/claude/c--Users-dnadr-OneDrive-desktop-Github-Pull-Dreamer-New/9af446c6-1cb6-42dd-83d4-5e982566befb/scratchpad/fonts)",
+      "Bash(curl -s 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap' -A 'Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/120 Safari/537.36' -o /c/Users/dnadr/AppData/Local/Temp/claude/c--Users-dnadr-OneDrive-desktop-Github-Pull-Dreamer-New/9af446c6-1cb6-42dd-83d4-5e982566befb/scratchpad/fonts/google-fonts.css)",
+      "Read(//c/Users/dnadr/AppData/Local/Temp/claude/c--Users-dnadr-OneDrive-desktop-Github-Pull-Dreamer-New/9af446c6-1cb6-42dd-83d4-5e982566befb/scratchpad/fonts/**)",
+      "Bash(curl -s -o /c/Users/dnadr/AppData/Local/Temp/claude/c--Users-dnadr-OneDrive-desktop-Github-Pull-Dreamer-New/9af446c6-1cb6-42dd-83d4-5e982566befb/scratchpad/fonts/playfair-display.woff2 https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2)",
+      "Bash(curl -s -o /c/Users/dnadr/AppData/Local/Temp/claude/c--Users-dnadr-OneDrive-desktop-Github-Pull-Dreamer-New/9af446c6-1cb6-42dd-83d4-5e982566befb/scratchpad/fonts/plus-jakarta-sans.woff2 https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yw.woff2)",
+      "Bash(mkdir -p \"contents/fonts\")",
+      "Bash(cp __TRACKED_VAR__/fonts/playfair-display.woff2 contents/fonts/playfair-display.woff2)",
+      "Bash(cp __TRACKED_VAR__/fonts/plus-jakarta-sans.woff2 contents/fonts/plus-jakarta-sans.woff2)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code} %{url_effective}\\\\n\" -L \"https://formspree.io/legal/privacy-policy\")",
+      "Bash(python -m http.server 8791)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:8791/fonts.css)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:8791/contents/fonts/playfair-display.woff2)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:8791/contents/fonts/plus-jakarta-sans.woff2)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:8791/de/../fonts.css)"
+    ]
+  }
+}

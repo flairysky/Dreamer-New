@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url("contents/fonts/playfair-display.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url("contents/fonts/plus-jakarta-sans.woff2") format("woff2");
+}

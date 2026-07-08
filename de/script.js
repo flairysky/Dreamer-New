@@ -206,6 +206,11 @@ buttons.forEach((button) => {
   }
 
   function showBanner() {
+    if (document.getElementById('cookie-banner')) {
+      return;
+    }
+
+    var previousConsent = localStorage.getItem(CONSENT_KEY);
     var banner = document.createElement('div');
     banner.className = 'cookie-banner';
     banner.id = 'cookie-banner';
@@ -222,12 +227,19 @@ buttons.forEach((button) => {
     document.getElementById('cookie-accept').addEventListener('click', function () {
       localStorage.setItem(CONSENT_KEY, 'accepted');
       banner.remove();
-      loadClarity();
+      if (previousConsent === 'declined') {
+        window.location.reload();
+      } else {
+        loadClarity();
+      }
     });
 
     document.getElementById('cookie-decline').addEventListener('click', function () {
       localStorage.setItem(CONSENT_KEY, 'declined');
       banner.remove();
+      if (previousConsent === 'accepted') {
+        window.location.reload();
+      }
     });
   }
 
@@ -237,6 +249,15 @@ buttons.forEach((button) => {
   } else if (consent !== 'declined') {
     showBanner();
   }
+
+  document
+    .querySelectorAll('#cookie-settings-link, .cookie-settings-link, #privacy-cookie-settings-link')
+    .forEach(function (link) {
+      link.addEventListener('click', function (event) {
+        event.preventDefault();
+        showBanner();
+      });
+    });
 }());
 
 (function () {
