@@ -916,6 +916,14 @@ a {
   color: rgba(12, 28, 52, 0.75);
 }
 
+.myth-label {
+  color: #c1121f;
+}
+
+.fact-label {
+  color: #2f9e44;
+}
+
 .story-block {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
