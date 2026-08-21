@@ -145,14 +145,26 @@ if (admissionTextBlocks.length > 0) {
 
 const testimonials = [
   {
+    quote: "This conversation completely changed how I think about my studies.",
+    name: "Dynasty Education Student",
+  },
+  {
     quote:
       "The support from Dynasty Education in choosing a university and later during my application preparations significantly improved the overall quality and helped me get accepted to the university of my dreams. Above all, the support from people who had been successful in applying to top universities gave me the much-needed peace of mind during the entire application process.",
     name: "Martin",
   },
   {
+    quote: "You just opened my eyes.",
+    name: "Dynasty Education Student",
+  },
+  {
     quote:
       "I really appreciate the patience and professionalism of the Dynasty Education team. They helped me with everything from choosing a school to writing my motivation letter.",
     name: "Nasta",
+  },
+  {
+    quote: "My values and goals are now on a completely new level.",
+    name: "Dynasty Education Student",
   },
 ];
 
